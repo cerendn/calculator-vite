@@ -1,7 +1,8 @@
-import React from "react";
+import React, { createContext } from "react";
 import CalcCard from "./CalcCard";
 
-const CalcList = ({ calcList }) => {
+const CalcList = () => {
+  const { calcList } = createContext();
   return (
     <div>
       <div className="calc-list">
